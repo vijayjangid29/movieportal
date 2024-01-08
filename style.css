@@ -43,10 +43,10 @@ flex-direction: column;
 
 
 }
-.name{
+/* .name{
     border: 0.1px solid rgba(128, 128, 128, 0.396); 
       
-}
+} */
 .name:hover{
 box-shadow: 4px 4px 4px 4px rgba(128, 128, 128, 0.351);
 border: 0px;
@@ -54,4 +54,80 @@ filter: drop-shadow( 10px 10px 10px gray) ;
  .first{
     border: 0px;
  }
+}
+                                                       /* silder */
+.slid{
+    top: 3rem;
+    right: 0rem;
+    left: 7rem;
+float: right;
+    width: 50px;
+    height: 10px;
+    border: 10px;
+    margin: -30px auto;
+    background: #00000077;
+    position: relative;
+    border-radius: 20px;
+    label {
+        position: absolute;
+        background: rgb(228, 228, 228)    ;
+        background:linear-gradient(rgba(255, 255, 255, 0.414) ,rgba(0, 0, 0, 0.205)rgba(128, 128, 128, 0.742));
+        width: 15px;
+        height: 17px;
+        top: -3px;
+        left: -10px;
+        border-radius: 80%;
+        transition-duration:0.5s;
+        box-shadow: 5px 5px 5px gray;
+        transition-property: all;
+        transition-timing-function: ease;
+        
+    }
+    input[type=checkbox]
+{
+    visibility: hidden;
+    &:checked + label {
+        left: 40px;
+    }
+}}
+#navdiv{
+    backdrop-filter: blur(10px);    width: 100%;
+    
+    /* border: 1px solid; */
+
+}
+.hero{
+    /* border: 1px solid; */
+    margin-top: 100px;
+    text-align: center;
+    
+}
+/*  Contact  */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+}
+body,html{
+    scroll-behavior: smooth;
+}
+#contact{
+    background: #000;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+input,textarea{
+    width: 300px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px;
+    height: 30px;
+}
+textarea{
+    height: 90px;
 }

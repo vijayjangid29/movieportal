@@ -469,13 +469,16 @@ const arr=[
       ]
     }
     ]
+    
+
+
     //id main div
     const maindiv=document.getElementById('container')
     
     // iterreting arrays ecach element 
-    let heading=document.getElementsByClassName('hero')
-    heading[0].textContent='Movie Portal'
-    heading[0].style.textAlign = 'center';
+    // let heading=document.getElementsByClassName('hero')
+    // heading[0].textContent='Movie Portal'
+    // heading[0].style.textAlign = 'center';
     arr.forEach(function(val)
     {
         // console.log(val.Title)
@@ -518,3 +521,12 @@ anchor.href="https://media.netflix.com/en/"
 // anchor.appendChild)
 img.title=val.Title
   })
+ function display(){
+  let apr=document.getElementById('checkbox')
+  if (apr.checked==true)
+  {
+    document.body.style.backgroundColor="gray"
+  }
+  else
+  document.body.style.backgroundColor="cornsilk"
+ }
